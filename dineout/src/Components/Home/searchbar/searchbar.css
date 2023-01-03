@@ -1,0 +1,91 @@
+.background-image {
+    position: relative;
+    background: #212529;
+    text-align: center;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    background-image: url("https://im1.dineout.co.in/images/uploads/misc/2021/Mar/31/oldherobannerwebfinal_bau.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image h1 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    font-size: 35px;
+    margin: 0px 0px 10px;
+    text-align: center;
+    font-family: "Metropolis",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.background-image h1 span {
+    color: #FF645A;
+    padding-left: 10px;
+}
+
+.search-bar-home {
+    background-color: #ffff;
+    font-family: "Metropolis",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    width: 1110px;
+    height: 60px;
+    padding: 0px 10px 0px 15px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 5px 0 rgb(204 199 198 / 40%);
+    border-radius: 5px;
+}
+
+.glass-icon {
+    color: #FF645A;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.search-bar-home input {
+    border-radius: 5px;
+    background: #fff;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    width: 882px;
+    margin: 0px 20px 0px 10px;
+    position: relative;
+    border: none;
+    font-size: 18px;
+}
+/* .search-bar-home input[type="text"] {
+    width: 100%;
+    margin: 0 2rem 0 1rem;
+    font-size: 1.8rem;
+    padding: 0 0.5rem;
+    height: 38px;
+} */
+
+.search-bar-home input:focus, 
+.search-bar-home input:active {
+    outline: none;
+}
+
+.search-bar-home button {
+    font-size: 18px;
+    background-color: #FF645A;
+    padding: 8px 40px;
+    border: none;
+    color: #ffff;
+    font-weight: 700;
+    line-height: 1.5;
+    border-radius: 5px;
+    width: 140px;
+    height: 43px;
+}
