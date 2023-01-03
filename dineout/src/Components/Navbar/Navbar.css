@@ -1,0 +1,42 @@
+.navbar{    
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+    background: #fff;
+}
+.navrootdiv{    
+    padding: 15px;
+    width: 1110px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.navdropdown{
+    text-align: center;
+    border: 1px solid black;
+    border-radius:5px;
+    width: 200px;
+    height: 37px;
+}
+.navAnchor{
+    width: 55%;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+.profileLink{
+    width: 15%;
+    border: 1px solid black;
+}
+.navLogo{
+    width: 100px;
+    cursor: pointer;
+}
+.profilePic{
+    border-radius: 50%;
+    height: 100%;
+    width: 37px;
+    border: 1px solid #FF645A;
+}
