@@ -1,0 +1,51 @@
+.a-sidenav-container{
+    width: 30%;
+    /* height: 100vh; */
+    background-color: white;
+    border: 1px solid red;
+}
+.a-sidebar-detail>div{
+    text-align: left;
+    padding: 2%;
+    color: #A0A0A0;
+}
+.a-sidebar-detail>div>input{
+    cursor: pointer;
+}
+.sidenav-inp:focus{
+   
+    outline: none;
+}
+.places-a:hover{
+    color: black;
+    cursor: pointer;
+}
+.sidenav-inp::placeholder{
+    color: #A0A0A0;
+    font-size: 13px;
+}
+.spanBorder{
+    height: 2px;
+    margin-top: 15px;
+    background-color: #F4F4F4;
+    width: 100%;
+}
+.sidenav-inp{
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    height: 13%;
+    background-color: #F4F4F4;
+font-size: 12px;  
+    border: 1px solid #F4F4F4;
+}
+.a-box-span{
+    color: #A0A0A0;
+    font-weight: 600;
+    border: none;
+    font-size: 14px;
+    background: none;
+}
+.accord{
+    cursor: pointer;
+}
