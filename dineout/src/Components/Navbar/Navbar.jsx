@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <div className='navbar'>
             <div className='navrootdiv'>
-                <div style={{ width: '100px', marginRight: '20px', cursor: 'pointer', }}>
+                <div style={{ width: '100px', marginRight: '20px', cursor: 'pointer', marginTop:'3px'}}>
                     <NavLink to='/'>
                         <img src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png' className='navLogo' alt='navlogo' />
                     </NavLink>
