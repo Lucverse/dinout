@@ -4,7 +4,7 @@ import NearRestaurants from "./nearRestaurants/nearRestaurants";
 import Offers from "./Offers/offers";
 import SearchBar from "./searchbar/searcbar";
 import Navbar from '../Navbar/Navbar'
-
+import Footer from "../Footer/Footer";
 function Home() {
     return (
         <div>
@@ -14,6 +14,7 @@ function Home() {
             <NearRestaurants />
             <FeaturedRestaurants />
             <Feature />
+            <Footer/>
         </div>
     )
 }

@@ -1,0 +1,27 @@
+.available, .moreoptiondiv{
+    width: 1110px;
+    margin: auto;
+}
+.available h4, .moreoptiondiv h4{
+    text-align: left;
+    color:#FF645A;
+}
+.availablediv, .moreoptiondiv{
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.splitter{
+    margin: 40px 0px;
+    width: 100%;
+    border: 1px solid rgb(102, 102,102);
+}
+.social{
+    margin: auto;
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.social img{
+    width: 30px;
+}
