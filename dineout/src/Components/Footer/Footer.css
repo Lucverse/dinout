@@ -12,9 +12,9 @@
     grid-template-columns: repeat(5,1fr);
 }
 .splitter{
-    margin: 40px 0px;
-    width: 100%;
-    border: 1px solid rgb(102, 102,102);
+    margin: 40px auto;    
+    width: 99%;
+    border: 1px solid rgb(222, 222, 222);
 }
 .social{
     margin: auto;
