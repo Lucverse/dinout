@@ -1,13 +1,15 @@
 import '../Navbar/Navbar.css';
 //import { useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom';
 function Navbar() {
 
     return (
         <div className='navbar'>
             <div className='navrootdiv'>
                 <div style={{ width: '100px', marginRight: '20px', cursor: 'pointer', }}>
-                    <img src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png' className='navLogo' alt='navlogo' />
+                    <NavLink to='/'>
+                        <img src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png' className='navLogo' alt='navlogo' />
+                    </NavLink>
                 </div>
                 <div className='navDropMenu'>
                     <img src='https://cdn-icons-png.flaticon.com/512/64/64665.png' />
