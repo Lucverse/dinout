@@ -16,6 +16,13 @@
     width: 99%;
     border: 1px solid rgb(222, 222, 222);
 }
+.h4bottom{
+    margin-top: -15px;
+    margin-bottom: 20px;
+    width: 35px;
+    border: 1px solid #FF645A;
+    background-color: #FF645A;
+}
 .social{
     margin: auto;
     width: 150px;

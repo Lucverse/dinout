@@ -5,6 +5,7 @@ function Available(){
     return(
         <div className="available">
             <h4>Available in</h4>
+            <div className="h4bottom"></div>
             <div className="availablediv">
             {
                 options.map((elem,i)=>{

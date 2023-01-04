@@ -9,6 +9,7 @@ function MoreOptions() {
         <div className="moreoptiondiv">
             <div>
                 <h4>Discover</h4>
+                <div className="h4bottom"></div>
                 <div className="options">
                     {
                         discover.map((ele, i) => {
@@ -25,6 +26,7 @@ function MoreOptions() {
             </div>
             <div>
                 <h4>About</h4>
+                <div className="h4bottom"></div>
                 <div className="options">
                     {
                         about.map((ele, i) => {
@@ -41,6 +43,7 @@ function MoreOptions() {
             </div>
             <div>
                 <h4>Top Cuisines</h4>
+                <div className="h4bottom"></div>
                 <div className="options">
                     {
                         topcuisines.map((ele, i) => {
@@ -57,6 +60,7 @@ function MoreOptions() {
             </div>
             <div>
                 <h4>Top Facilities</h4>
+                <div className="h4bottom"></div>
                 <div className="options">
                     {
                         topfacilities.map((ele, i) => {
@@ -73,6 +77,7 @@ function MoreOptions() {
             </div>
             <div>
                 <h4>Top Locations</h4>
+                <div className="h4bottom"></div>
                 <div className="options">
                     {
                         toplocations.map((ele, i) => {
