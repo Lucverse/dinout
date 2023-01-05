@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d6d6d6;
+  height: 100vh;
+}
+.main {
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+.main > div {
+  border-bottom: 4px solid #d6d6d6;
+}
+.middle,
+.bottom {
+  text-align: left;
+}
+.middle h2,
+.bottom h2 {
+  margin-left: 2rem;
+}
+.middle .lower,
+.bottom .lower {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 2rem;
+}
+
+.main .top h3,
+.middle .lower .left,
+.bottom .lower .left {
+  color: #868686;
+}
+
+.middle .lower .right,
+.bottom .lower .right {
+  text-align: right;
+}

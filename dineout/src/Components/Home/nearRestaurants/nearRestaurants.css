@@ -1,0 +1,21 @@
+.restaurants-width {
+    width: 100%;
+}
+.width {
+    max-width: 1300px;
+    margin: 0 180px;
+}
+.near-title-bar {
+    font-family: "Metropolis",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: #333333;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.near-title-bar p {
+    font-size: 14px;
+    margin-top: 70px;
+}
