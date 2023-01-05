@@ -1,6 +1,6 @@
 .a-sidenav-container{
     width: 30%;
-    /* height: 100vh; */
+    height: 100%;
     background-color: white;
     border: 1px solid red;
 }
