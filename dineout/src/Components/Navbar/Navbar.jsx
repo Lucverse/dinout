@@ -2,7 +2,7 @@ import '../Navbar/Navbar.css';
 //import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 function Navbar() {
-
+     
     return (
         <div className='navbar'>
             <div className='navrootdiv'>
@@ -33,7 +33,7 @@ function Navbar() {
                     </div>
 
                     <div className='profileDrop'>
-                        <p className='dropbtn'>My Account</p>
+                        <p className='dropbtn'>My Account <i class="arrow down"></i></p>
                         <div className="dropdown-content">
                             <NavLink to='/Profile' className='navlink'>Profile</NavLink>
                             <NavLink to='/couponhistory' className='navlink'>Coupon History</NavLink>
