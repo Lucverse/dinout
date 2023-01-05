@@ -3,7 +3,7 @@ import '../Navbar/Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import LoginButton from './LoginButton';
 function Navbar() {
-    
+    var isAuth = false;
     return (
         <div className='navbar'>
             <div className='navrootdiv'>
