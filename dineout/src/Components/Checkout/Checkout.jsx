@@ -48,7 +48,7 @@ const Checkout = () => {
                 <span className="tableStatus">
                   {tableStatus
                     ? "Your reservation is confirmed! Happy Dining"
-                    : "Loading..."}
+                    : "Wait! While we are confirming your seat."}
                 </span>
               </h5>
               <h5>.......</h5>
