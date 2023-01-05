@@ -36,10 +36,11 @@ useEffect(()=>{
 
 
 const fetchhh = async()=>{
-await fetch(`https://dineoutclone-foc1.onrender.com/products`)
-.then((res)=>res.json())
-.then((d)=>{
-  dispatch(ProductAction({d,setState}));
+  await fetch(`https://dineoutclone-foc1.onrender.com/products`)
+  .then((res)=>res.json())
+  .then((d)=>{
+    dispatch(ProductAction({d,setState}));
+    console.log(d)
   setState(d);
 })
 }
