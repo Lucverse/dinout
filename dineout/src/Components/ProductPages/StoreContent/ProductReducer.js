@@ -1,11 +1,14 @@
 import React from 'react'
 
-let initData = [];
+let initData = {};
 
 const ProductReducer = (state =initData , action) => {
   
      if(action.type ==="DATA"){
-        state = action.data
+        state = {
+        setState : action.data.setState,
+        data : action.data.d
+      }
      }
 
     return state;

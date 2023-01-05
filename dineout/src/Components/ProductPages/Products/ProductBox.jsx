@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import "./productBox.css"
 import ProductAction from '../StoreContent/ProductAction';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
-import store from '../../../Store';
+import { useDispatch, useSelector } from 'react-redux';
+// import store from '../../../Store';
+import DivProduct from './DivProduct';
+import { Link } from 'react-router-dom';
+// import { Select } from '@chakra-ui/react';
+
 
 const ProductBox = () => {
-  const data = useSelector((store)=>store)  
-  console.log(data);
-  let [state,setState]= useState(data);
+  // var data = useSelector((store)=>store)  
+  // console.log(data);
+  let [state,setState]= useState([]);
+  let [page,setPage] = useState(1);
+  // console.log(state);
  
   
-  
-
-// setState(data);
-
-
-//  setState(data);
 
   let dispatch = useDispatch();
 
@@ -28,10 +27,11 @@ useEffect(()=>{
 
 
 const fetchhh = async()=>{
-await fetch('http://localhost:1000/products')
+await fetch(`https://dineoutclone-foc1.onrender.com/products?_page=${page}&_limit=18`)
 .then((res)=>res.json())
 .then((d)=>{
-  dispatch(ProductAction(d));
+  dispatch(ProductAction({d,setState}));
+  setState(d);
 })
 }
 
@@ -39,7 +39,31 @@ await fetch('http://localhost:1000/products')
 
 
   return (
-    <div className='a-productBox-container'>Box</div>
+    <div className='a-productBox-container'>
+
+<nav className='a-productBox-nav'>
+  <div>
+
+<h2>Best Restaurants Near Me in Delhi <span>({state.length})</span></h2>
+  </div>
+
+<div>
+  <span>Sort by</span>
+<select >
+  <option value="Rating">Rating</option>
+  <option value="Popularity">Popularity</option>
+  <option value="Low to High">Price: Low to High</option>
+  <option value="High to Low">Price: High to Low</option>
+</select>
+</div>
+</nav>
+
+
+<div className='a-gridBox'>
+{state.map((e,i)=> <Link to="" style={{textDecoration:"none"}}  key={i+1}><DivProduct e={e}/> </Link>)}
+</div>
+
+    </div>
   )
 }
 
