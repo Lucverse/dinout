@@ -66,7 +66,11 @@ const ProductBox = () => {
 
       <div className="a-gridBox">
         {state.map((e, i) => (
-          <Link to="" style={{ textDecoration: "none" }} key={i + 1}>
+          <Link
+            to={`/products/${i}`}
+            style={{ textDecoration: "none" }}
+            key={i + 1}
+          >
             <DivProduct e={e} />{" "}
           </Link>
         ))}
@@ -81,3 +85,5 @@ const ProductBox = () => {
 };
 
 export default ProductBox;
+
+// `/products/${i}?data=${JSON.stringify(e)}`;
