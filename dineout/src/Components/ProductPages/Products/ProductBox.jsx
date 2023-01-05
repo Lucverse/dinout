@@ -15,6 +15,15 @@ const ProductBox = () => {
   let [page,setPage] = useState(1);
   // console.log(state);
  
+  const change = (id)=>{
+    setPage(id);
+  }
+
+
+  let arr = [];
+for(let i = 1; i<=10; i++){
+  arr.push( <button onClick={()=>change(i)} key={i}>{i}</button>)
+}
   
 
   let dispatch = useDispatch();
@@ -27,7 +36,7 @@ useEffect(()=>{
 
 
 const fetchhh = async()=>{
-await fetch(`https://dineoutclone-foc1.onrender.com/products?_page=${page}&_limit=18`)
+await fetch(`https://dineoutclone-foc1.onrender.com/products`)
 .then((res)=>res.json())
 .then((d)=>{
   dispatch(ProductAction({d,setState}));
@@ -63,6 +72,11 @@ await fetch(`https://dineoutclone-foc1.onrender.com/products?_page=${page}&_limi
 {state.map((e,i)=> <Link to="" style={{textDecoration:"none"}}  key={i+1}><DivProduct e={e}/> </Link>)}
 </div>
 
+
+<div>
+{page}
+{arr}
+</div>
     </div>
   )
 }
