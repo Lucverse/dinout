@@ -35,3 +35,8 @@
 .bottom .lower .left {
   color: #868686;
 }
+
+.middle .lower .right,
+.bottom .lower .right {
+  text-align: right;
+}
